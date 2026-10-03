@@ -1,0 +1,16 @@
+{
+  "THESEEKER-THE_SEEKER.title": "The Seeker",
+  "THESEEKER-THE_SEEKER.titleObject": "The Seeker",
+  "THESEEKER-THE_SEEKER.description": "A retired monk seeking knowledge of the spire, specializes in balance and constant improving.",
+  "THESEEKER-THE_SEEKER.pronounObject": "him",
+  "THESEEKER-THE_SEEKER.possessiveAdjective": "his",
+  "THESEEKER-THE_SEEKER.pronounPossessive": "his",
+  "THESEEKER-THE_SEEKER.pronounSubject": "he",
+  "THESEEKER-THE_SEEKER.goldMonologue": "...",
+  "THESEEKER-THE_SEEKER.eventDeathPrevention": "...",
+  "THESEEKER-THE_SEEKER.aromaPrinciple": "...",
+  "THESEEKER-THE_SEEKER.cardsModifierTitle": "...",
+  "THESEEKER-THE_SEEKER.cardsModifierDescription": "...",
+  "THESEEKER-THE_SEEKER.banter.alive.endTurnPing": "...",
+  "THESEEKER-THE_SEEKER.banter.dead.endTurnPing": "...",
+}
