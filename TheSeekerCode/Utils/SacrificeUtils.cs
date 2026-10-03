@@ -10,9 +10,9 @@ namespace TheSeeker.TheSeekerCode.Utils;
 
 public class SacrificeUtils
 {
-    public static async Task Sacrifice(PlayerChoiceContext choiceContext, CardModel? source, int amount)
+    public static async Task Sacrifice(PlayerChoiceContext choiceContext, CardModel source, int amount)
     {
-        if (amount < 0) return;
+        if (amount <= 0) return;
         var creature = source.Owner.Creature;
         decimal hpBefore = creature.CurrentHp;
 

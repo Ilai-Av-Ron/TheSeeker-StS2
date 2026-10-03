@@ -12,7 +12,7 @@ public class SacrificePower() : TheSeekerPower
 
     public override PowerStackType StackType => PowerStackType.Counter;
 
-    public override async Task AfterCombatVictory(CombatRoom room)
+    public override async Task AfterCombatEnd(CombatRoom room)
     {
         if (Amount < 0) return;
 
