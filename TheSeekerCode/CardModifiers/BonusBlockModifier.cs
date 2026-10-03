@@ -25,6 +25,11 @@ public class BonusBlockModifier : CardModifier, ICustomModel, ILocalizationProvi
     [
         new BlockVar(BlockKey, Amount, ValueProp.Move)
     ];
+    
+    public override void OnInitialApplication()
+    {
+        DynamicVars[BlockKey].BaseValue = Amount;
+    }
 
     public override bool ApplyStacked(CardModifier newApplied)
     {
