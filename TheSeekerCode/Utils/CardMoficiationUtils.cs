@@ -2,6 +2,7 @@
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Models;
 using TheSeeker.TheSeekerCode.CardModifiers;
+using MegaCrit.Sts2.Core.Entities.Cards;
 
 namespace TheSeeker.TheSeekerCode.Utils;
 
@@ -17,5 +18,10 @@ public static class CardModificationUtils
     {
         card.DynamicVars.RecalculateForUpgradeOrEnchant();
         CardCmd.Preview(card);
+    }
+
+    public static void addKeyword(CardModel card, CardKeyword keyword)
+    {
+        CardCmd.ApplyKeyword(card, keyword);
     }
 }
