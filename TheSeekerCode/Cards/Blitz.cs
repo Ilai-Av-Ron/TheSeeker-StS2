@@ -7,7 +7,7 @@ using TheSeeker.TheSeekerCode.Cards;
 
 namespace TheSeeker.TheSeekerCode.Cards;
 
-public class Blitz() : TheSeekerCard(1, CardType.Attack, CardRarity.Common, TargetType.AnyEnemy)
+public class Blitz() : TheSeekerCard(1, CardType.Attack, CardRarity.Uncommon, TargetType.AnyEnemy)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(3, ValueProp.Move)];
 
