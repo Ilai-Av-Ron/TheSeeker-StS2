@@ -8,7 +8,7 @@ using TheSeeker.TheSeekerCode.Utils;
 
 namespace TheSeeker.TheSeekerCode.Cards;
 
-public class Overreach() : TheSeekerCard(0, CardType.Skill, CardRarity.Uncommon, TargetType.Self)
+public class Overreach() : TheSeekerCard(0, CardType.Skill, CardRarity.Rare, TargetType.Self)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [new CardsVar(3)];
     public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Exhaust];
