@@ -27,8 +27,5 @@ public class TheBestDefenseCard() : TheSeekerCard(3, CardType.Power, CardRarity.
     }
 
     
-    protected override void OnUpgrade()
-    {
-        RemoveKeyword(CardKeyword.Ethereal);
-    }
+    protected override void OnUpgrade() => RemoveKeyword(CardKeyword.Ethereal);
 }

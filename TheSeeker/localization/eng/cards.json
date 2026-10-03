@@ -21,5 +21,8 @@
   "THESEEKER-OVERREACH.description": "Draw {Cards} cards, sacrifice 1 for each card drawn. Gain 1 temporary strength for each attack drawn, and 1 temporary dexterity for each skill drawn. Exhaust.",
 
   "THESEEKER-POMODORO.title": "Pomodoro",
-  "THESEEKER-POMODORO.description": "Sacrifice {HpLoss:diff()}. At the start of your next turn, gain {Energy} energy."
+  "THESEEKER-POMODORO.description": "Sacrifice {HpLoss:diff()}. At the start of your next turn, gain {Energy} energy.",
+
+  "THESEEKER-RECURRING_THOUGHT.title": "Recurring Thought",
+  "THESEEKER-RECURRING_THOUGHT.description": "Ethereal. Sacrifice {HpLoss} Deal {Damage:diff()} to all enemies twice. At the end of your turn, play this card from your discard pile."
 }
