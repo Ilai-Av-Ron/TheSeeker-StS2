@@ -11,7 +11,7 @@
     {
         protected override IEnumerable<DynamicVar> CanonicalVars =>
         [
-            new BlockVar(2, ValueProp.Move)
+            new BlockVar(1, ValueProp.Move)
         ];
 
         protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay play)
