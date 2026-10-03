@@ -24,5 +24,5 @@
   "THESEEKER-POMODORO.description": "Sacrifice {HpLoss:diff()}. At the start of your next turn, gain {Energy} energy.",
 
   "THESEEKER-RECURRING_THOUGHT.title": "Recurring Thought",
-  "THESEEKER-RECURRING_THOUGHT.description": "Ethereal. Sacrifice {HpLoss} Deal {Damage:diff()} to all enemies twice. At the end of your turn, play this card from your discard pile."
+  "THESEEKER-RECURRING_THOUGHT.description": "Sacrifice {HpLoss} Deal {Damage:diff()} to all enemies twice. At the end of your turn, play this card from your discard pile."
 }
