@@ -1,4 +1,6 @@
 {
   "THESEEKER-CONJURE_UP.title": "Conjure Up",
-  "THESEEKER-CONJURE_UP.description": "Play a random Attack from your draw pile. Gain {Block} Block."
+  "THESEEKER-CONJURE_UP.description": "Play a random Attack from your draw pile. Gain {Block} Block.",
+  "THESEEKER-ENDOW.title": "Endow",
+  "THESEEKER-ENDOW.description": "Deal {Damage} to an enemy 2 times. Choose an attack in your discard pile, it gains {Block} block."
 }

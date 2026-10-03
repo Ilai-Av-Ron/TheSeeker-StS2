@@ -29,7 +29,8 @@ public class TheSeeker : PlaceholderCharacterModel
         ModelDb.Card<DefendIronclad>(),
         ModelDb.Card<DefendIronclad>(),
         ModelDb.Card<DefendIronclad>(),
-        ModelDb.Card<ConjureUp>()
+        ModelDb.Card<ConjureUp>(),
+        ModelDb.Card<Endow>()
     ];
 
     public override IReadOnlyList<RelicModel> StartingRelics =>
