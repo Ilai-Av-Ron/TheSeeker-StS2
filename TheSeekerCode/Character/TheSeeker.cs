@@ -7,6 +7,7 @@ using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.Cards;
 using MegaCrit.Sts2.Core.Models.Relics;
 using TheSeeker.TheSeekerCode.Cards;
+using TheSeeker.TheSeekerCode.Relics;
 
 namespace TheSeeker.TheSeekerCode.Character;
 
@@ -35,7 +36,7 @@ public class TheSeeker : PlaceholderCharacterModel
 
     public override IReadOnlyList<RelicModel> StartingRelics =>
     [
-        ModelDb.Relic<BurningBlood>()
+        ModelDb.Relic<Harmony>()
     ];
     
     public override CardPoolModel CardPool => ModelDb.CardPool<TheSeekerCardPool>();
