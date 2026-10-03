@@ -14,8 +14,8 @@ public class SacrificePower() : TheSeekerPower
 
     public override async Task AfterCombatEnd(CombatRoom room)
     {
-        if (Amount < 0) return;
-
+        if (Amount < 0 || !Owner.IsAlive) return;
+        
         await CreatureCmd.Heal(Owner, Amount);
     }
 }

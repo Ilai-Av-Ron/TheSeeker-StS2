@@ -25,6 +25,10 @@ public class SacrificeUtils
             source);
 
         int hpLost = (int)(hpBefore - creature.CurrentHp);
+        // if (creature is { CurrentHp: <= 0, IsDead: false })
+        // {
+        //     await CreatureCmd.Kill(creature);
+        // }
         if (hpLost <= 0) return;
 
         await PowerCmd.Apply<SacrificePower>(
