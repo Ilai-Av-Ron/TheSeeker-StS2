@@ -11,7 +11,7 @@ using TheSeeker.TheSeekerCode.Utils;
 
 namespace TheSeeker.TheSeekerCode.Cards;
 
-public class Flare() : TheSeekerCard(1, CardType.Attack, CardRarity.Basic, TargetType.Self)
+public class Flare() : TheSeekerCard(1, CardType.Skill, CardRarity.Uncommon, TargetType.Self)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [new BlockVar(7, ValueProp.Move)];
 
