@@ -58,6 +58,20 @@ public class BonusBlockModifier : CardModifier, ICustomModel, ILocalizationProvi
         Creature? target,
         ref string description)
     {
+        if (Owner != null)
+        {
+            bool runGlobalHooks =
+                Owner.CombatState != null &&
+                Owner.Pile?.Type is PileType.Hand or PileType.Play;
+
+            DynamicVars[BlockKey].UpdateCardPreview(
+                Owner,
+                CardPreviewMode.Normal,
+                target,
+                runGlobalHooks
+            );
+        }
+
         description += "\n" +
                        GetLoc("extraCardText").GetFormattedText();
     }
