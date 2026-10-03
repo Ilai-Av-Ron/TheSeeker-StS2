@@ -9,5 +9,8 @@
   "THESEEKER-ENDOW.description": "Deal {Damage:diff()} to an enemy 2 times. Choose an attack in your discard pile, it gains {Block} block.",
 
   "THESEEKER-BLITZ.title": "Blitz",
-  "THESEEKER-BLITZ.description": "Deal {Damage:diff()} to an enemy 3 times."
+  "THESEEKER-BLITZ.description": "Deal {Damage:diff()} to an enemy 3 times.",
+
+  "THESEEKER-MEDITATE.title": "Meditate",
+  "THESEEKER-MEDITATE.description": "Gain {Block:diff()} block. At the start of your next turn, gain {PowerVar} temporary strength."
 }

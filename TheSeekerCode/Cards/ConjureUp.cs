@@ -14,9 +14,7 @@
             new BlockVar(2, ValueProp.Move)
         ];
 
-        protected override async Task OnPlay(
-            PlayerChoiceContext choiceContext,
-            CardPlay play)
+        protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay play)
         {
             await CardPileCmd.ShuffleIfNecessary(choiceContext, Owner);
             
