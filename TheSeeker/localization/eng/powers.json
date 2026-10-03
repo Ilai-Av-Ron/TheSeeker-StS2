@@ -5,5 +5,9 @@
 
   "THESEEKER-MEDITATE_POWER.title": "Meditate",
   "THESEEKER-MEDITATE_POWER.description": "At the start of your next turn, gain {Amount} temporary strength.",
-  "THESEEKER-MEDITATE_POWER.smartDescription": "At the start of your next turn, gain {Amount} temporary strength."
+  "THESEEKER-MEDITATE_POWER.smartDescription": "At the start of your next turn, gain {Amount} temporary strength.",
+
+  "THESEEKER-SACRIFICE_POWER.title": "Sacrifice",
+  "THESEEKER-SACRIFICE_POWER.description": "At the end of combat, heal {Amount} HP.",
+  "THESEEKER-SACRIFICE_POWER.smartDescription": "At the end of combat, heal {Amount} HP."
 }

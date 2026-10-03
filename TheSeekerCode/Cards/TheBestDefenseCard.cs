@@ -10,6 +10,7 @@ namespace TheSeeker.TheSeekerCode.Cards;
 public class TheBestDefenseCard() : TheSeekerCard(3, CardType.Power, CardRarity.Rare, TargetType.Self)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [];
+    public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Ethereal];
 
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,
@@ -25,7 +26,6 @@ public class TheBestDefenseCard() : TheSeekerCard(3, CardType.Power, CardRarity.
         );
     }
 
-    public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Ethereal];
     
     protected override void OnUpgrade()
     {

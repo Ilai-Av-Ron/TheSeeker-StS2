@@ -15,5 +15,11 @@
   "THESEEKER-FLARE.description": "Choose an attack in your hand, it gains {Block} block, Retain and Exhaust.",
   
   "THESEEKER-MEDITATE.title": "Meditate",
-  "THESEEKER-MEDITATE.description": "Gain {Block:diff()} Block. At the start of your next turn, gain {StrengthPower:diff()} temporary Strength."
+  "THESEEKER-MEDITATE.description": "Gain {Block:diff()} Block. At the start of your next turn, gain {StrengthPower:diff()} temporary Strength.",
+
+  "THESEEKER-OVERREACH.title": "Overreach",
+  "THESEEKER-OVERREACH.description": "Gain {Cards} cards. Gain 1 temporary strength for each attack drawn, and 1 temporary dexterity for each skill drawn.",
+
+  "THESEEKER-POMODORO.title": "Pomodoro",
+  "THESEEKER-POMODORO.description": "Sacrifice {HpLoss:diff()} Block. At the start of your next turn, gain {Energy} energy."
 }
