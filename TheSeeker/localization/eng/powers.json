@@ -1,5 +1,9 @@
 {
   "THESEEKER-THE_BEST_DEFENSE_POWER.title": "The Best Defense",
   "THESEEKER-THE_BEST_DEFENSE_POWER.description": "Whenever you play an Attack, gain 1 Block. Scales with Dexterity.",
-  "THESEEKER-THE_BEST_DEFENSE_POWER.smartDescription": "Whenever you play an Attack, gain {Amount} Block. Scales with Dexterity."
+  "THESEEKER-THE_BEST_DEFENSE_POWER.smartDescription": "Whenever you play an Attack, gain {Amount} Block. Scales with Dexterity.",
+
+  "THESEEKER-MEDITATE_POWER.title": "Meditate",
+  "THESEEKER-MEDITATE_POWER.description": "At the start of your next turn, gain {Amount} temporary strength.",
+  "THESEEKER-MEDITATE_POWER.smartDescription": "At the start of your next turn, gain {Amount} temporary strength."
 }

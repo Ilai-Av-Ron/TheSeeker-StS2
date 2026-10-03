@@ -15,5 +15,5 @@
   "THESEEKER-FLARE.description": "Choose an attack in your hand, it gains {Block} block, Retain and Exhaust.",
   
   "THESEEKER-MEDITATE.title": "Meditate",
-  "THESEEKER-MEDITATE.description": "Gain {Block:diff()} block. At the start of your next turn, gain {PowerVar} temporary strength."
+  "THESEEKER-MEDITATE.description": "Gain {Block:diff()} Block. At the start of your next turn, gain {Strength:diff()} temporary Strength."
 }
