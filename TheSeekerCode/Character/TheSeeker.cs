@@ -6,6 +6,7 @@ using MegaCrit.Sts2.Core.Entities.Characters;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.Cards;
 using MegaCrit.Sts2.Core.Models.Relics;
+using TheSeeker.TheSeekerCode.Cards;
 
 namespace TheSeeker.TheSeekerCode.Character;
 
@@ -28,6 +29,7 @@ public class TheSeeker : PlaceholderCharacterModel
         ModelDb.Card<DefendIronclad>(),
         ModelDb.Card<DefendIronclad>(),
         ModelDb.Card<DefendIronclad>(),
+        ModelDb.Card<ConjureUp>()
     ];
 
     public override IReadOnlyList<RelicModel> StartingRelics =>
