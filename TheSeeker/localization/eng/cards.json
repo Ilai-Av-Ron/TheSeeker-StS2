@@ -1,8 +1,10 @@
 {
-  "THESEEKER-THE-BEST-DEFENSE.title": "The Best Defense",
-  "THESEEKER-THE-BEST-DEFENSE.description": "Whenever you play an attack, gain 1 block. Scales with dexterity.",
+  "THESEEKER-THE_BEST_DEFENSE_CARD.title": "The Best Defense",
+  "THESEEKER-THE_BEST_DEFENSE_CARD.description": "Whenever you play an attack, gain 1 block. Scales with dexterity.",
+  
   "THESEEKER-CONJURE_UP.title": "Conjure Up",
-  "THESEEKER-CONJURE_UP.description": "Play a random Attack from your draw pile. Gain {Block} Block.",
+  "THESEEKER-CONJURE_UP.description": "Play a random Attack from your draw pile. Gain {Block:diff()} Block.",
+  
   "THESEEKER-ENDOW.title": "Endow",
-  "THESEEKER-ENDOW.description": "Deal {Damage} to an enemy 2 times. Choose an attack in your discard pile, it gains {Block} block."
+  "THESEEKER-ENDOW.description": "Deal {Damage:diff()} to an enemy 2 times. Choose an attack in your discard pile, it gains {Block} block."
 }

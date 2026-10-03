@@ -1,3 +1,5 @@
 {
-  
+  "THESEEKER-THE_BEST_DEFENSE_POWER.title": "The Best Defense",
+  "THESEEKER-THE_BEST_DEFENSE_POWER.description": "Whenever you play an Attack, gain 1 Block. Scales with Dexterity.",
+  "THESEEKER-THE_BEST_DEFENSE_POWER.smartDescription": "Whenever you play an Attack, gain {Amount} Block. Scales with Dexterity."
 }
