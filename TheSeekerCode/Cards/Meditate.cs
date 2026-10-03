@@ -34,6 +34,6 @@ public class Meditate() : TheSeekerCard(2, CardType.Skill, CardRarity.Uncommon, 
     protected override void OnUpgrade()
     {
         DynamicVars.Block.UpgradeValueBy(3m);
-        DynamicVars.Damage.UpgradeValueBy(1m);
+        DynamicVars.Strength.UpgradeValueBy(1m);
     }
 }
