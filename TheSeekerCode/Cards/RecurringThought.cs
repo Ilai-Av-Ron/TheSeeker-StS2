@@ -18,7 +18,7 @@ public class RecurringThought() : TheSeekerCard(3, CardType.Attack, CardRarity.R
     protected override IEnumerable<DynamicVar> CanonicalVars => 
         [
             new HpLossVar(1),
-            new DamageVar(5, ValueProp.Move)
+            new DamageVar(4, ValueProp.Move)
         ];
     public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Ethereal];
 
