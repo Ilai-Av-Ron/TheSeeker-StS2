@@ -32,7 +32,7 @@ namespace TheSeeker.TheSeekerCode.Cards;
 
             if (attack != null)
             {
-                CardModificationUtils.AddBlock(attack, DynamicVars.Block.IntValue);
+                CardModificationUtils.AddBlock(attack, (int) DynamicVars.Block.BaseValue);
             }
             
         }
