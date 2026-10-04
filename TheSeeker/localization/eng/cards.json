@@ -30,5 +30,8 @@
   "THESEEKER-BYPASS.description": "Disintegrate now goes through block.",
 
   "THESEEKER-STAIN.title": "Stain",
-  "THESEEKER-STAIN.description": "Deal {Damage:diff()} damage, apply {TheSeekerDisintegrationPower:diff()} Disintegration."
+  "THESEEKER-STAIN.description": "Deal {Damage:diff()} damage, apply {TheSeekerDisintegrationPower:diff()} Disintegration.",
+
+  "THESEEKER-SHELL.title": "Shell",
+  "THESEEKER-SHELL.description": "Gain {Block:diff()} block twice."
 }
