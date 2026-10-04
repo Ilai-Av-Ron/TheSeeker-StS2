@@ -7,7 +7,7 @@
 
     namespace TheSeeker.TheSeekerCode.Cards;
 
-    public class ConjureUp() : TheSeekerCard(0, CardType.Skill, CardRarity.Basic, TargetType.Self)
+    public class ConjureUp() : TheSeekerCard(1, CardType.Skill, CardRarity.Basic, TargetType.Self)
     {
         protected override IEnumerable<DynamicVar> CanonicalVars =>
         [
