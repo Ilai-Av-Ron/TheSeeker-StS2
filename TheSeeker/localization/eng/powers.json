@@ -9,5 +9,13 @@
 
   "THESEEKER-SACRIFICE_POWER.title": "Sacrifice",
   "THESEEKER-SACRIFICE_POWER.description": "At the end of combat, heal {Amount} HP.",
-  "THESEEKER-SACRIFICE_POWER.smartDescription": "At the end of combat, heal {Amount} HP."
+  "THESEEKER-SACRIFICE_POWER.smartDescription": "At the end of combat, heal {Amount} HP.",
+
+  "THESEEKER-THE_SEEKER_DISINTEGRATION_POWER.title": "Disintegration",
+  "THESEEKER-THE_SEEKER_DISINTEGRATION_POWER.description": "At the end of your turn, take {Amount} damage.",
+  "THESEEKER-THE_SEEKER_DISINTEGRATION_POWER.smartDescription": "At the end of your turn, take {Amount} damage.",
+
+  "THESEEKER-BYPASS_POWER.title": "Bypass",
+  "THESEEKER-BYPASS_POWER.description": "Enemy disintegrate now goes through block.",
+  "THESEEKER-BYPASS_POWER.smartDescription": "Enemy disintegrate now goes through block."
 }
