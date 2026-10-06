@@ -36,5 +36,8 @@
   "THESEEKER-SHELL.description": "Gain {Block:diff()} block twice.",
 
   "THESEEKER-GIVE_AND_TAKE.title": "Give and Take",
-  "THESEEKER-GIVE_AND_TAKE.description": "Sacrifice {HpLoss:diff()}. Apply {TheSeekerDisintegrationPower:diff()} Disintegration to all enemies."
+  "THESEEKER-GIVE_AND_TAKE.description": "Sacrifice {HpLoss:diff()}. Apply {TheSeekerDisintegrationPower:diff()} Disintegration to all enemies.",
+
+  "THESEEKER-SEE-ALL.title": "See All",
+  "THESEEKER-SEE-ALL.description": "Deal {Damage:difF()} damage to all enemies, gain 1 temporary dexterity for each enemy hit."
 }
