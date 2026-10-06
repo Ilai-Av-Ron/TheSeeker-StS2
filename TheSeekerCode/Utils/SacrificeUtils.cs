@@ -1,19 +1,15 @@
-﻿using System.Dynamic;
-using MegaCrit.Sts2.Core.Commands;
-using MegaCrit.Sts2.Core.GameActions.Multiplayer;
-using MegaCrit.Sts2.Core.Models;
-using MegaCrit.Sts2.Core.Nodes.Vfx;
-using MegaCrit.Sts2.Core.ValueProps;
-using TheSeeker.TheSeekerCode.Powers;
-
-namespace TheSeeker.TheSeekerCode.Utils;
-
-public class SacrificeUtils
+﻿public class SacrificeUtils
 {
-    public static async Task Sacrifice(PlayerChoiceContext choiceContext, CardModel source, int amount)
+    public static Task Sacrifice(PlayerChoiceContext choiceContext, CardModel source,int amount)
     {
-        if (amount <= 0) return;
-        var creature = source.Owner.Creature;
+        return Sacrifice(choiceContext, source.Owner.Creature, amount, source);
+    }
+
+    public static async Task Sacrifice( PlayerChoiceContext choiceContext, Creature creature, int amount, CardModel? source = null)
+    {
+        if (amount <= 0)
+            return;
+
         decimal hpBefore = creature.CurrentHp;
 
         await CreatureCmd.Damage(
@@ -22,13 +18,10 @@ public class SacrificeUtils
             amount,
             ValueProp.Unblockable | ValueProp.Unpowered,
             creature,
-            source);
+            source
+        );
 
         int hpLost = (int)(hpBefore - creature.CurrentHp);
-        // if (creature is { CurrentHp: <= 0, IsDead: false })
-        // {
-        //     await CreatureCmd.Kill(creature);
-        // }
         if (hpLost <= 0) return;
 
         await PowerCmd.Apply<SacrificePower>(
@@ -37,8 +30,7 @@ public class SacrificeUtils
             hpLost,
             creature,
             source,
-            false);
-
-
+            false
+        );
     }
 }
