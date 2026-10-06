@@ -11,18 +11,21 @@ public class GiveAndTake() : TheSeekerCard(0, CardType.Attack, CardRarity.Rare, 
         ];
     public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Exhaust];
 
-    protected override async System.Threading.Tasks.Task OnPlay(PlayerChoiceContext choiceContext, CardPlay play)
+    protected override async System.Threading.Tasks.Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardplay)
     {
         await SacrificeUtils.Sacrifice(choiceContext, this, DynamicVars.HpLoss.IntValue);
-        await TheSeekerDisintegrationPower.Apply(
-            choiceContext,
-            cardPlay.Target,
-            DynamicVars
-                .Power<TheSeekerDisintegrationPower>()
-                .IntValue,
-            Owner.Creature,
-            this
-        );
+        foreach (var enemy in Owner.Creature.CombatState.HittableEnemies)
+        {
+            await TheSeekerDisintegrationPower.Apply(
+                choiceContext,
+                enemy,
+                DynamicVars
+                    .Power<TheSeekerDisintegrationPower>()
+                    .IntValue,
+                Owner.Creature,
+                this
+            );
+        }
     }
 
     protected override void OnUpgrade() => RemoveKeyword(CardKeyword.Exhaust);
