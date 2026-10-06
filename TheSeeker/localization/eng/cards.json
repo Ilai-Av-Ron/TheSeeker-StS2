@@ -18,7 +18,7 @@
   "THESEEKER-MEDITATE.description": "Gain {Block:diff()} Block. At the start of your next turn, gain {StrengthPower:diff()} temporary Strength.",
 
   "THESEEKER-OVERREACH.title": "Overreach",
-  "THESEEKER-OVERREACH.description": "Draw {Cards} cards, sacrifice 1 for each card drawn. Gain 1 temporary strength for each attack drawn, and 1 temporary dexterity for each skill drawn. Exhaust.",
+  "THESEEKER-OVERREACH.description": "Draw {Cards} cards, sacrifice 1 for each card drawn. Gain 1 temporary strength for each attack drawn, and 1 temporary dexterity for each skill drawn.",
 
   "THESEEKER-POMODORO.title": "Pomodoro",
   "THESEEKER-POMODORO.description": "Sacrifice {HpLoss:diff()}. At the start of your next turn, gain {Energy} energy.",
@@ -33,5 +33,8 @@
   "THESEEKER-STAIN.description": "Deal {Damage:diff()} damage, apply {TheSeekerDisintegrationPower:diff()} Disintegration.",
 
   "THESEEKER-SHELL.title": "Shell",
-  "THESEEKER-SHELL.description": "Gain {Block:diff()} block twice."
+  "THESEEKER-SHELL.description": "Gain {Block:diff()} block twice.",
+
+  "THESEEKER-GIVE_AND_TAKE.title": "Give and Take",
+  "THESEEKER-GIVE_AND_TAKE.description": "Sacrifice {HpLoss:diff()}. Apply {TheSeekerDisintegrationPower:diff()} Disintegration to all enemies."
 }
