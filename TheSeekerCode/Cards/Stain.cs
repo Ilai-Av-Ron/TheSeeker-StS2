@@ -12,8 +12,8 @@ public class Stain() : TheSeekerCard(1, CardType.Attack, CardRarity.Common, Targ
 {
     protected override IEnumerable<DynamicVar> CanonicalVars =>
     [
-        new DamageVar(5m, ValueProp.Move),
-        new PowerVar<TheSeekerDisintegrationPower>(3m)
+        new DamageVar(5, ValueProp.Move),
+        new PowerVar<TheSeekerDisintegrationPower>(3)
     ];
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
