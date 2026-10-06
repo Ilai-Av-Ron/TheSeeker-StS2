@@ -39,5 +39,8 @@
   "THESEEKER-GIVE_AND_TAKE.description": "Sacrifice {HpLoss:diff()}. Apply {TheSeekerDisintegrationPower:diff()} Disintegration to all enemies.",
 
   "THESEEKER-SEE-ALL.title": "See All",
-  "THESEEKER-SEE-ALL.description": "Deal {Damage:difF()} damage to all enemies, gain 1 temporary dexterity for each enemy hit."
+  "THESEEKER-SEE-ALL.description": "Deal {Damage:difF()} damage to all enemies, gain 1 temporary dexterity for each enemy hit.",
+
+  "THESEEKER-SLOW_BURN.title": "Slow Burn",
+  "THESEEKER-SLOW_BURN.description": "Whenever an enemy takes disintegration damage, apply 1 disintegration."
 }

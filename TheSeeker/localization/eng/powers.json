@@ -21,5 +21,9 @@
 
   "THESEEKER-SACRIFICE_NEXT_TURN_POWER.title": "Sacrifice",
   "THESEEKER-SACRIFICE_NEXT_TURN_POWER.description": "At the start of your next turn, sacrifice {Amount}.",
-  "THESEEKER-SACRIFICE_NEXT_TURN_POWER.smartDescription": "At the start of your next turn, sacrifice."
+  "THESEEKER-SACRIFICE_NEXT_TURN_POWER.smartDescription": "At the start of your next turn, sacrifice.",
+
+  "THESEEKER-SLOW_BURN_POWER.title": "Slow BUrn",
+  "THESEEKER-SLOW_BURN_POWER.description": "Whenever an enemy takes disintegration damage, apply 1 disintegration.",
+  "THESEEKER-SLOW_BURN_POWER.smartDescription": "Whenever an enemy takes disintegration damage, apply 1 disintegration."
 }
