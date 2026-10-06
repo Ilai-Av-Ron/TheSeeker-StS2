@@ -7,7 +7,7 @@ using TheSeeker.TheSeekerCode.Powers;
 
 namespace TheSeeker.TheSeekerCode.Cards;
 
-public class Bypass() : TheSeekerCard(1, CardType.Attack, CardRarity.Uncommon, TargetType.Self)
+public class Bypass() : TheSeekerCard(1, CardType.Power, CardRarity.Uncommon, TargetType.Self)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [];
 
