@@ -5,5 +5,9 @@
 
   "THESEEKER-SPIKED_HEART.title": "Spiked Heart",
   "THESEEKER-SPIKED_HEART.description": "Whenever you sacrifice, deal 4 damage to all enemies.",
-  "THESEEKER-SPIKED_HEART.flavor": "I really didn't think I'd have to create flavor text for all of these."
+  "THESEEKER-SPIKED_HEART.flavor": "I really didn't think I'd have to create flavor text for all of these.",
+
+  "THESEEKER-ECONOMIC_SACRIFICE.title": "Economic Sacrifice",
+  "THESEEKER-ECONOMIC_SACRIFICE.description": "Whenever you heal, gain the same amount of gold.",
+  "THESEEKER-ECONOMIC_SACRIFICE.flavor": "Some call it blood money, he just calls it a smart investment."
 }
