@@ -1,4 +1,11 @@
-﻿public class SacrificeUtils
+﻿using MegaCrit.Sts2.Core.Commands;
+using MegaCrit.Sts2.Core.Entities.Creatures;
+using MegaCrit.Sts2.Core.GameActions.Multiplayer;
+using MegaCrit.Sts2.Core.Models;
+using MegaCrit.Sts2.Core.ValueProps;
+using TheSeeker.TheSeekerCode.Powers;
+
+public class SacrificeUtils
 {
     public static Task Sacrifice(PlayerChoiceContext choiceContext, CardModel source,int amount)
     {

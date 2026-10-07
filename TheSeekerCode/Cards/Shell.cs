@@ -7,13 +7,14 @@ using TheSeeker.TheSeekerCode.Cards;
 
 namespace TheSeeker.TheSeekerCode.Cards;
 
-public class Blitz() : TheSeekerCard(1, CardType.Skill, CardRarity.Common, TargetType.Self)
+public class Shell() : TheSeekerCard(1, CardType.Skill, CardRarity.Common, TargetType.Self)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [new BlockVar(3, ValueProp.Move)];
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay play)
     {
-        await CommonActions.CardBlock(this, play, 2);
+        await CommonActions.CardBlock(this, play);
+        await CommonActions.CardBlock(this, play);
     }
 
     protected override void OnUpgrade()

@@ -1,10 +1,13 @@
+using MegaCrit.Sts2.Core.Entities.Creatures;
+using MegaCrit.Sts2.Core.Entities.Powers;
+using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using TheSeeker.TheSeekerCode.Powers;
 
 namespace TheSeeker.TheSeekerCode.Powers;
 
 public class SlowBurnPower() : TheSeekerPower
 {
-    public override MegaCrit.PowerType Type => PowerType.Buff;
+    public override PowerType Type => PowerType.Buff;
     public override PowerStackType StackType => PowerStackType.Single;
     
     public async Task AfterDisintegrationDamage(PlayerChoiceContext choiceContext, TheSeekerDisintegrationPower power, DamageResult result)

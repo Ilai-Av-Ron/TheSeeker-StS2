@@ -1,4 +1,11 @@
+using BaseLib.Utils;
+using MegaCrit.Sts2.Core.Commands;
+using MegaCrit.Sts2.Core.Entities.Cards;
+using MegaCrit.Sts2.Core.GameActions.Multiplayer;
+using MegaCrit.Sts2.Core.Localization.DynamicVars;
+using MegaCrit.Sts2.Core.ValueProps;
 using TheSeeker.TheSeekerCode.Cards;
+using TheSeeker.TheSeekerCode.Powers;
 
 namespace TheSeeker.TheSeekerCode.Cards;
 
@@ -13,20 +20,21 @@ public class PayThePrice() : TheSeekerCard(1, CardType.Skill, CardRarity.Common,
     protected override async Task OnPlay( PlayerChoiceContext choiceContext, CardPlay play)
     {
         await CommonActions.CardBlock(this, play);
+        await PowerCmd.Apply<SacrificeNextTurnPower>(
+            choiceContext,
+            Owner.Creature,
+            DynamicVars.HpLoss.IntValue,
+            Owner.Creature,
+            this,
+            false
+        );
     }
 
-    await PowerCmd.Apply<SacrificeNextTurnPower>(
-        choiceContext,
-        Owner.Creature,
-        DynamicVars.HpLoss.IntValue,
-        Owner.Creature,
-        this,
-        false
-    );
+   
     
 
     protected override void OnUpgrade()
     {
-        DynamicVar.HpLossVar.UpgradeByValue(-2);
+        DynamicVars.HpLoss.UpgradeValueBy(-2);
     }
 }
