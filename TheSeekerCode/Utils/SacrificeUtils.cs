@@ -5,6 +5,14 @@ using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.ValueProps;
 using TheSeeker.TheSeekerCode.Powers;
 
+public interface ISacrificeHook
+{
+    Task AfterSacrifice(PlayerChoiceContext choiceContext, Creature creature, int amount)
+    {
+        return Task.CompletedTask;
+    }
+}
+
 public class SacrificeUtils
 {
     public static Task Sacrifice(PlayerChoiceContext choiceContext, CardModel source,int amount)
@@ -39,5 +47,10 @@ public class SacrificeUtils
             source,
             false
         );
+        
+        foreach (var hook in creature.CombatState.IterateHookListeners().OfType<ISacrificeHook>())
+        {
+            await hook.AfterSacrifice(choiceContext,creature, hpLost);
+        }
     }
 }

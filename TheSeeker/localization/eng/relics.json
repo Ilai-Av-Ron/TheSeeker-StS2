@@ -1,5 +1,9 @@
 {
   "THESEEKER-HARMONY.title": "Harmony",
   "THESEEKER-HARMONY.description": "Whenever you play an attack after playing a skill, gain 1 temporary dexterity. Whenever you play a skill after playing an attack, gain 1 temporary strength.",
-  "THESEEKER-HARMONY.flavor": "The inner peace from bla bla something monk you get it."
+  "THESEEKER-HARMONY.flavor": "The inner peace from bla bla something monk you get it.",
+
+  "THESEEKER-SPIKED_HEART.title": "Spiked Heart",
+  "THESEEKER-SPIKED_HEART.description": "Whenever you sacrifice, deal 4 damage to all enemies.",
+  "THESEEKER-SPIKED_HEART.flavor": "I really didn't think I'd have to create flavor text for all of these."
 }
