@@ -2,12 +2,15 @@
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
+using MegaCrit.Sts2.Core.Models;
+using MegaCrit.Sts2.Core.Models.Cards;
 using TheSeeker.TheSeekerCode.Cards;
 using TheSeeker.TheSeekerCode.Powers;
+using BaseDisintegration = MegaCrit.Sts2.Core.Models.Cards.Disintegration;
 
 namespace TheSeeker.TheSeekerCode.Cards;
 
-public class CurseOfKnowledgeDisintegrationChoice() : TheSeekerCard(0, CardType.Skill, CardRarity.Token, TargetType.AnyEnemy)
+public class CurseOfKnowledgeDisintegrationChoice() : TheSeekerCard(0, CardType.Skill, CardRarity.Rare, TargetType.AnyEnemy, false, false)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [new PowerVar<TheSeekerDisintegrationPower>(10)];
 
@@ -15,6 +18,9 @@ public class CurseOfKnowledgeDisintegrationChoice() : TheSeekerCard(0, CardType.
     {
         return Task.CompletedTask;
     }
-
+    
     protected override void OnUpgrade() => DynamicVars.Power<TheSeekerDisintegrationPower>().UpgradeValueBy(3);
+    
+    public override string PortraitPath => ModelDb.Card<BaseDisintegration>().PortraitPath;
+
 }

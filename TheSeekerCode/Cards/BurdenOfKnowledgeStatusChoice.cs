@@ -3,14 +3,16 @@ using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
+using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.Powers;
 using MegaCrit.Sts2.Core.ValueProps;
 using TheSeeker.TheSeekerCode.Cards;
 using TheSeeker.TheSeekerCode.Powers;
+using BaseMindRot = MegaCrit.Sts2.Core.Models.Cards.Sloth;
 
 namespace TheSeeker.TheSeekerCode.Cards;
 
-public class BurdenOfKnowledgeStatusChoice() : TheSeekerCard(0, CardType.Skill, CardRarity.Token, TargetType.AnyEnemy)
+public class BurdenOfKnowledgeStatusChoice() : TheSeekerCard(0, CardType.Skill, CardRarity.Uncommon, TargetType.AnyEnemy, false, false)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars =>
     [
@@ -28,4 +30,7 @@ public class BurdenOfKnowledgeStatusChoice() : TheSeekerCard(0, CardType.Skill, 
         DynamicVars.Power<WeakPower>().UpgradeValueBy(2);
         DynamicVars.Power<VulnerablePower>().UpgradeValueBy(2);
     }
+    
+    public override string PortraitPath => ModelDb.Card<BaseMindRot>().PortraitPath;
+
 }

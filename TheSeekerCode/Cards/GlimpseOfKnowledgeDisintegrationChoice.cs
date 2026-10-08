@@ -2,12 +2,14 @@
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
+using MegaCrit.Sts2.Core.Models;
 using TheSeeker.TheSeekerCode.Cards;
 using TheSeeker.TheSeekerCode.Powers;
+using BaseDisintegration = MegaCrit.Sts2.Core.Models.Cards.Disintegration;
 
 namespace TheSeeker.TheSeekerCode.Cards;
 
-public class GlimpseOfKnowledgeDisintegrationChoice() : TheSeekerCard(0, CardType.Skill, CardRarity.Token, TargetType.AnyEnemy)
+public class GlimpseOfKnowledgeDisintegrationChoice() : TheSeekerCard(0, CardType.Skill, CardRarity.Common, TargetType.AnyEnemy, false, false)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [new PowerVar<TheSeekerDisintegrationPower>(6)];
 
@@ -17,4 +19,7 @@ public class GlimpseOfKnowledgeDisintegrationChoice() : TheSeekerCard(0, CardTyp
     }
 
     protected override void OnUpgrade() => DynamicVars.Power<TheSeekerDisintegrationPower>().UpgradeValueBy(2);
+    
+    public override string PortraitPath => ModelDb.Card<BaseDisintegration>().PortraitPath;
+
 }
