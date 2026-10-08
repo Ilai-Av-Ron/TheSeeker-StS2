@@ -45,5 +45,9 @@
   "THESEEKER-SLOW_BURN.description": "Whenever an enemy takes disintegration damage, apply 1 disintegration.",
 
   "THESEEKER-PAY_THE_PRICE.title": "Pay the Price",
-  "THESEEKER-PAY_THE_PRICE.description": "Gain {Block:diff()} block. At the start of next turn, sacrifice {HpLoss:diff()}."
-}
+  "THESEEKER-PAY_THE_PRICE.description": "Gain {Block:diff()} block. At the start of next turn, sacrifice {HpLoss:diff()}.",
+
+  "THESEEKER-METHODICAL_LEARNER.title": "Methodical Learner",
+  "THESEEKER-METHODICAL_LEARNER.description": "Deal {Damage:diff()} to an enemy. This card gains 3 block this combat."
+  
+  }
