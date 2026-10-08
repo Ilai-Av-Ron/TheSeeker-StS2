@@ -9,7 +9,7 @@ using TheSeeker.TheSeekerCode.Powers;
 
 namespace TheSeeker.TheSeekerCode.Cards;
 
-public class GlimpseOfKnowledgeDamageChoice() : TheSeekerCard(0, CardType.Attack, CardRarity.Common, TargetType.AnyEnemy)
+public class GlimpseOfKnowledgeDamageChoice() : TheSeekerCard(0, CardType.Attack, CardRarity.Token, TargetType.AnyEnemy)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(13, ValueProp.Move)];
 

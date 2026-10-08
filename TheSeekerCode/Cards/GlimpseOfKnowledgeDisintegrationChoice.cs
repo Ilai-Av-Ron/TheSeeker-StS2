@@ -7,7 +7,7 @@ using TheSeeker.TheSeekerCode.Powers;
 
 namespace TheSeeker.TheSeekerCode.Cards;
 
-public class GlimpseOfKnowledgeDisintegrationChoice() : TheSeekerCard(0, CardType.Skill, CardRarity.Common, TargetType.AnyEnemy)
+public class GlimpseOfKnowledgeDisintegrationChoice() : TheSeekerCard(0, CardType.Skill, CardRarity.Token, TargetType.AnyEnemy)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [new PowerVar<TheSeekerDisintegrationPower>(6)];
 

@@ -13,7 +13,7 @@ using TheSeeker.TheSeekerCode.Powers;
 
 namespace TheSeeker.TheSeekerCode.Cards;
 
-public class GlimpseOfKnowledge() : TheSeekerCard(1, CardType.Skill,CardRarity.Common, TargetType.AnyEnemy)
+public class GlimpseOfKnowledge() : TheSeekerCard(1, CardType.Skill, CardRarity.Common, TargetType.Self)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars =>
     [
