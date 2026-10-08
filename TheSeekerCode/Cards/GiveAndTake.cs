@@ -7,7 +7,7 @@ using TheSeeker.TheSeekerCode.Powers;
 
 namespace TheSeeker.TheSeekerCode.Cards;
 
-public class GiveAndTake() : TheSeekerCard(0, CardType.Attack, CardRarity.Rare, TargetType.AllEnemies)
+public class GiveAndTake() : TheSeekerCard(0, CardType.Skill, CardRarity.Rare, TargetType.AllEnemies)
 {
     protected override IEnumerable<MegaCrit.Sts2.Core.Localization.DynamicVars.DynamicVar> CanonicalVars => 
         [
