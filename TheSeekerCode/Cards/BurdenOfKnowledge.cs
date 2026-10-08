@@ -14,6 +14,8 @@ using MegaCrit.Sts2.Core.Nodes.Rooms;
 using MegaCrit.Sts2.Core.ValueProps;
 using TheSeeker.TheSeekerCode.Cards;
 using TheSeeker.TheSeekerCode.Powers;
+using TheSeeker.TheSeekerCode.Utils;
+
 
 namespace TheSeeker.TheSeekerCode.Cards;
 
@@ -61,7 +63,7 @@ public class BurdenOfKnowledge() : TheSeekerCard(1, CardType.Skill, CardRarity.U
                 break;
 
             case BurdenOfKnowledgeStatusChoice:
-                var target = await ChooseEnemy();
+                var target = await Owner.ChooseEnemy();
                 if (target is null) return;
                 
                 await PowerCmd.Apply<WeakPower>(
@@ -87,24 +89,5 @@ public class BurdenOfKnowledge() : TheSeekerCard(1, CardType.Skill, CardRarity.U
         DynamicVars.Power<WeakPower>().UpgradeValueBy(2);
         DynamicVars.Power<VulnerablePower>().UpgradeValueBy(2);
         DynamicVars.Power<TheSeekerDisintegrationPower>().UpgradeValueBy(2);
-    }
-    
-    private async Task<Creature?> ChooseEnemy()
-    {
-        var targetManager = NTargetManager.Instance;
-        var ownerNode = NCombatRoom.Instance.CreatureNodes.First(node => node.Entity == Owner.Creature);
-
-        targetManager.StartTargeting(
-            TargetType.AnyEnemy,
-            ownerNode,
-            TargetMode.ClickMouseToTarget,
-            null,
-            null
-        );
-
-        var selectedNode = await targetManager.SelectionFinished();
-        return selectedNode is NCreature creatureNode
-            ? creatureNode.Entity
-            : null;
     }
 }

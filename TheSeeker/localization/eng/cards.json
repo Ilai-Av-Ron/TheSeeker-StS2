@@ -78,5 +78,5 @@
   "THESEEKER-CURSE_OF_KNOWLEDGE_DISINTEGRATION_CHOICE.description": "Apply {TheSeekerDisintegrationPower:diff()} disintegration to an enemy.",
 
   "THESEEKER-CURSE_OF_KNOWLEDGE_STUN_CHOICE.title": "Waste Away",
-  "THESEEKER-CURSE_OF_KNOWLEDGE_STUN_CHOICE.description": "Deal {Damage:diff} damage and stun an enemy."
+  "THESEEKER-CURSE_OF_KNOWLEDGE_STUN_CHOICE.description": "Deal {Damage:diff()} damage and stun an enemy."
 }
