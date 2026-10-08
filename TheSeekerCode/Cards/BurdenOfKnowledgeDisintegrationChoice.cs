@@ -4,6 +4,7 @@ using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models;
 using TheSeeker.TheSeekerCode.Cards;
+using TheSeeker.TheSeekerCode.Character;
 using TheSeeker.TheSeekerCode.Powers;
 using BaseDisintegration = MegaCrit.Sts2.Core.Models.Cards.Disintegration;
 
@@ -12,6 +13,7 @@ namespace TheSeeker.TheSeekerCode.Cards;
 
 public class BurdenOfKnowledgeDisintegrationChoice() : TheSeekerCard(0, CardType.Skill, CardRarity.Uncommon, TargetType.AllEnemies, false, false)
 {
+    public override CardPoolModel Pool => ModelDb.CardPool<TheSeekerCardPool>();
     protected override IEnumerable<DynamicVar> CanonicalVars => [new PowerVar<TheSeekerDisintegrationPower>(4)];
 
     protected override Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)

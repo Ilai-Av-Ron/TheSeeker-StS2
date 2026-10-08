@@ -7,6 +7,7 @@ using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.Powers;
 using MegaCrit.Sts2.Core.ValueProps;
 using TheSeeker.TheSeekerCode.Cards;
+using TheSeeker.TheSeekerCode.Character;
 using TheSeeker.TheSeekerCode.Powers;
 using BaseMindRot = MegaCrit.Sts2.Core.Models.Cards.Sloth;
 
@@ -14,6 +15,7 @@ namespace TheSeeker.TheSeekerCode.Cards;
 
 public class BurdenOfKnowledgeStatusChoice() : TheSeekerCard(0, CardType.Skill, CardRarity.Uncommon, TargetType.AnyEnemy, false, false)
 {
+    public override CardPoolModel Pool => ModelDb.CardPool<TheSeekerCardPool>();
     protected override IEnumerable<DynamicVar> CanonicalVars =>
     [
         new PowerVar<WeakPower>(3),
