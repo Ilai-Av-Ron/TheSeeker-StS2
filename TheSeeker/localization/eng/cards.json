@@ -57,8 +57,17 @@
   "THESEEKER-GLIMPSE_OF_KNOWLEDGE.description": "Choose between Disintegration and Mind Rot.",
 
   "THESEEKER-GLIMPSE_OF_KNOWLEDGE_DISINTEGRATION_CHOICE.title": "Disintegration",
-  "THESEEKER-GLIMPSE_OF_KNOWLEDGE_DISINTEGRATION_CHOICE.description": "Apply {TheSeekerDisintegrationPower:diff()} Disintegration to an enemy.",
+  "THESEEKER-GLIMPSE_OF_KNOWLEDGE_DISINTEGRATION_CHOICE.description": "Apply {TheSeekerDisintegrationPower:diff()} disintegration to an enemy.",
 
   "THESEEKER-GLIMPSE_OF_KNOWLEDGE_DAMAGE_CHOICE.title": "Mind Rot",
-  "THESEEKER-GLIMPSE_OF_KNOWLEDGE_DAMAGE_CHOICE.description": "Deal {Damage:diff} damage to an enemy."
+  "THESEEKER-GLIMPSE_OF_KNOWLEDGE_DAMAGE_CHOICE.description": "Deal {Damage:diff} damage to an enemy.",
+
+  "THESEEKER-BURDEN_OF_KNOWLEDGE.title": "Burden of Knowledge",
+  "THESEEKER-BURDEN_OF_KNOWLEDGE.description": "Choose between Disintegration and Sloth.",
+
+  "THESEEKER-BURDEN_OF_KNOWLEDGE_DISINTEGRATION_CHOICE.title": "Disintegration",
+  "THESEEKER-BURDEN_OF_KNOWLEDGE_DISINTEGRATION_CHOICE.description": "Apply {TheSeekerDisintegrationPower:diff()} disintegration to all enemies.",
+
+  "THESEEKER-BURDEN_OF_KNOWLEDGE_STATUS_CHOICE.title": "Sloth",
+  "THESEEKER-BURDEN_OF_KNOWLEDGE_STATUS_CHOICE.description": "Apply {WeakPower:diff} damage to an enemy."
 }

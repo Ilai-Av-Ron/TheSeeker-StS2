@@ -39,9 +39,7 @@ public class GlimpseOfKnowledge() : TheSeekerCard(1, CardType.Skill, CardRarity.
             Owner.Creature.CombatState.CreateCard(ModelDb.Card<GlimpseOfKnowledgeDamageChoice>(),Owner)
         };
 
-        if (IsUpgraded)
-            CardCmd.Upgrade(choices, CardPreviewStyle.None);
-
+        if (IsUpgraded) CardCmd.Upgrade(choices, CardPreviewStyle.None);
         var chosenCard = await CardSelectCmd.FromChooseACardScreen(choiceContext,choices, Owner);
 
         switch (chosenCard)
