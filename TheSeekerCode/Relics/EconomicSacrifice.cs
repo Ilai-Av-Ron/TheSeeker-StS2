@@ -10,7 +10,7 @@ namespace TheSeeker.TheSeekerCode.Relics;
 
 public class EconomicSacrifice() : TheSeekerRelic
 {
-    public override RelicRarity Rarity => RelicRarity.Common;
+    public override RelicRarity Rarity => RelicRarity.Shop;
 
     public async Task AfterCurrentHpChanged(
         IRunState runState,
