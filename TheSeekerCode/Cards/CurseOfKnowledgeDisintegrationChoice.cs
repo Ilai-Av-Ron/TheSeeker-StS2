@@ -23,6 +23,6 @@ public class CurseOfKnowledgeDisintegrationChoice() : TheSeekerCard(0, CardType.
     
     protected override void OnUpgrade() => DynamicVars.Power<TheSeekerDisintegrationPower>().UpgradeValueBy(3);
     
-    public override string PortraitPath => ModelDb.Card<BaseDisintegration>().PortraitPath;
+    public override string CustomPortraitPath => ModelDb.Card<BaseDisintegration>().PortraitPath;
 
 }

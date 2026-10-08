@@ -25,6 +25,6 @@ public class CurseOfKnowledgeStunChoice() : TheSeekerCard(0, CardType.Attack, Ca
 
     protected override void OnUpgrade() => DynamicVars.Damage.UpgradeValueBy(8);
     
-    public override string PortraitPath => ModelDb.Card<BaseWasteAway>().PortraitPath;
+    public override string CustomPortraitPath => ModelDb.Card<BaseWasteAway>().PortraitPath;
 
 }

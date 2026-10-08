@@ -24,5 +24,5 @@ public class GlimpseOfKnowledgeDamageChoice() : TheSeekerCard(0, CardType.Attack
 
     protected override void OnUpgrade() => DynamicVars.Damage.UpgradeValueBy(4);
     
-    public override string PortraitPath => ModelDb.Card<BaseMindRot>().PortraitPath;
+    public override string CustomPortraitPath => ModelDb.Card<BaseMindRot>().PortraitPath;
 }

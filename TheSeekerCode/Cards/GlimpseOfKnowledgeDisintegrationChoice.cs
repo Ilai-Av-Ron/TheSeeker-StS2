@@ -22,6 +22,6 @@ public class GlimpseOfKnowledgeDisintegrationChoice() : TheSeekerCard(0, CardTyp
 
     protected override void OnUpgrade() => DynamicVars.Power<TheSeekerDisintegrationPower>().UpgradeValueBy(2);
     
-    public override string PortraitPath => ModelDb.Card<BaseDisintegration>().PortraitPath;
+    public override string CustomPortraitPath => ModelDb.Card<BaseDisintegration>().PortraitPath;
 
 }

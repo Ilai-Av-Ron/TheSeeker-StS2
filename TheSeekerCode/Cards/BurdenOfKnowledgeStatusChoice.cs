@@ -33,6 +33,6 @@ public class BurdenOfKnowledgeStatusChoice() : TheSeekerCard(0, CardType.Skill, 
         DynamicVars.Power<VulnerablePower>().UpgradeValueBy(2);
     }
     
-    public override string PortraitPath => ModelDb.Card<BaseMindRot>().PortraitPath;
+    public override string CustomPortraitPath => ModelDb.Card<BaseMindRot>().PortraitPath;
 
 }
