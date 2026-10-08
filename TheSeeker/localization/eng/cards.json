@@ -1,53 +1,36 @@
 {
   "THESEEKER-THE_BEST_DEFENSE_CARD.title": "The Best Defense",
   "THESEEKER-THE_BEST_DEFENSE_CARD.description": "Whenever you play an attack, gain 1 block. Scales with dexterity.",
-  
   "THESEEKER-CONJURE_UP.title": "Conjure Up",
   "THESEEKER-CONJURE_UP.description": "Play a random Attack from your draw pile. Gain {Block:diff()} Block.",
-  
   "THESEEKER-ENDOW.title": "Endow",
   "THESEEKER-ENDOW.description": "Deal {Damage:diff()} to an enemy 2 times. Choose an attack in your discard pile, it gains {Block} block.",
-
   "THESEEKER-BLITZ.title": "Blitz",
   "THESEEKER-BLITZ.description": "Deal {Damage:diff()} to an enemy 3 times.",
-
   "THESEEKER-FLARE.title": "Flare",
   "THESEEKER-FLARE.description": "Choose an attack in your hand, it gains {Block} block, Retain and Exhaust.",
-  
   "THESEEKER-MEDITATE.title": "Meditate",
   "THESEEKER-MEDITATE.description": "Gain {Block:diff()} Block. At the start of your next turn, gain {StrengthPower:diff()} temporary Strength.",
-
   "THESEEKER-OVERREACH.title": "Overreach",
   "THESEEKER-OVERREACH.description": "Draw {Cards} cards, sacrifice 1 for each card drawn. Gain 1 temporary strength for each attack drawn, and 1 temporary dexterity for each skill drawn.",
-
   "THESEEKER-POMODORO.title": "Pomodoro",
   "THESEEKER-POMODORO.description": "Sacrifice {HpLoss:diff()}. At the start of your next turn, gain {Energy} energy.",
-
   "THESEEKER-RECURRING_THOUGHT.title": "Recurring Thought",
   "THESEEKER-RECURRING_THOUGHT.description": "Sacrifice {HpLoss} Deal {Damage:diff()} to all enemies twice. At the end of your turn, play this card from your discard pile.",
-
   "THESEEKER-BYPASS.title": "Bypass",
   "THESEEKER-BYPASS.description": "Disintegrate now goes through block.",
-
   "THESEEKER-STAIN.title": "Stain",
   "THESEEKER-STAIN.description": "Deal {Damage:diff()} damage, apply {TheSeekerDisintegrationPower:diff()} Disintegration.",
-
   "THESEEKER-SHELL.title": "Shell",
   "THESEEKER-SHELL.description": "Gain {Block:diff()} block twice.",
-
   "THESEEKER-GIVE_AND_TAKE.title": "Give and Take",
   "THESEEKER-GIVE_AND_TAKE.description": "Sacrifice {HpLoss:diff()}. Apply {TheSeekerDisintegrationPower:diff()} Disintegration to all enemies.",
-
   "THESEEKER-SEE_ALL.title": "See All",
   "THESEEKER-SEE_ALL.description": "Deal {Damage:difF()} damage to all enemies, gain 1 temporary dexterity for each enemy hit.",
-
   "THESEEKER-SLOW_BURN.title": "Slow Burn",
   "THESEEKER-SLOW_BURN.description": "Whenever an enemy takes disintegration damage, apply 1 disintegration.",
-
   "THESEEKER-PAY_THE_PRICE.title": "Pay the Price",
   "THESEEKER-PAY_THE_PRICE.description": "Gain {Block:diff()} block. At the start of next turn, sacrifice {HpLoss:diff()}.",
-
   "THESEEKER-METHODICAL_LEARNER.title": "Methodical Learner",
   "THESEEKER-METHODICAL_LEARNER.description": "Deal {Damage:diff()} to an enemy. This card gains 3 block this combat."
-  
-  }
+}
