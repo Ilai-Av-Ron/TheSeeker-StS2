@@ -13,5 +13,9 @@
 
   "THESEEKER-REVITALIZE.title": "Revitalize",
   "THESEEKER-REVITALIZE.description": "Every other turn, gain energy the first time you trigger harmony.",
-  "THESEEKER-REVITALIZE.flavor": "Going for balance will sometimes grant you exactly what you were missing."
+  "THESEEKER-REVITALIZE.flavor": "Going for balance will sometimes grant you exactly what you were missing.",
+
+  "THESEEKER-MALEVOLENT_MANTRA.title": "Malevolent Mantra",
+  "THESEEKER-MALEVOLENT_MANTRA.description": "At the start of your turn, apply 1 disintegrate to all enemies.",
+  "THESEEKER-MALEVOLENT_MANTRA.flavor": "Imagine if he had a shrine..."
 }
