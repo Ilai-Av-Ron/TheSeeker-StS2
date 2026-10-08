@@ -69,5 +69,5 @@
   "THESEEKER-BURDEN_OF_KNOWLEDGE_DISINTEGRATION_CHOICE.description": "Apply {TheSeekerDisintegrationPower:diff()} disintegration to all enemies.",
 
   "THESEEKER-BURDEN_OF_KNOWLEDGE_STATUS_CHOICE.title": "Sloth",
-  "THESEEKER-BURDEN_OF_KNOWLEDGE_STATUS_CHOICE.description": "Apply {WeakPower:diff} damage to an enemy."
+  "THESEEKER-BURDEN_OF_KNOWLEDGE_STATUS_CHOICE.description": "Apply {WeakPower:diff()} and {VulnerablePower:diff()} damage to an enemy."
 }
