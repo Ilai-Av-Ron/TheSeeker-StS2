@@ -9,7 +9,7 @@ namespace TheSeeker.TheSeekerCode.Relics;
 public class Revitalize() : TheSeekerRelic, Harmony.IHarmonyHook
 {
     private int _cooldown = 0; 
-    public override RelicRarity Rarity => RelicRarity.Uncommon;
+    public override RelicRarity Rarity => RelicRarity.Rare;
     
     public async Task AfterHarmonyTriggered(PlayerChoiceContext choiceContext, Player player)
     {
