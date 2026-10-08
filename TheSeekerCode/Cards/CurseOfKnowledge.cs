@@ -10,6 +10,7 @@ using MegaCrit.Sts2.Core.Nodes.CommonUi;
 using MegaCrit.Sts2.Core.ValueProps;
 using TheSeeker.TheSeekerCode.Cards;
 using TheSeeker.TheSeekerCode.Powers;
+using TheSeeker.TheSeekerCode.Utils;
 
 namespace TheSeeker.TheSeekerCode.Cards;
 
@@ -31,8 +32,6 @@ public class CurseOfKnowledge() : TheSeekerCard(3, CardType.Skill, CardRarity.Ra
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
-        ArgumentNullException.ThrowIfNull(cardPlay.Target);
-
         var choices = new List<CardModel>
         {
             Owner.Creature.CombatState.CreateCard(ModelDb.Card<CurseOfKnowledgeDisintegrationChoice>(), Owner),
@@ -41,22 +40,25 @@ public class CurseOfKnowledge() : TheSeekerCard(3, CardType.Skill, CardRarity.Ra
 
         if (IsUpgraded) CardCmd.Upgrade(choices, CardPreviewStyle.None);
         var chosenCard = await CardSelectCmd.FromChooseACardScreen(choiceContext,choices, Owner);
-
+        
+        var target = await Owner.ChooseEnemy();
+        if (target is null) return;
+        
         switch (chosenCard)
         {
-            case GlimpseOfKnowledgeDisintegrationChoice:
+            case CurseOfKnowledgeDisintegrationChoice:
                 await TheSeekerDisintegrationPower.Apply(
                     choiceContext,
-                    cardPlay.Target,
+                    target,
                     DynamicVars.Power<TheSeekerDisintegrationPower>().IntValue,
                     Owner.Creature,
                     this
                 );
                 break;
 
-            case GlimpseOfKnowledgeDamageChoice:
+            case CurseOfKnowledgeStunChoice:
                 await CommonActions.CardAttack(this, cardPlay).Execute(choiceContext);
-                await CreatureCmd.Stun(cardPlay.Target);
+                await CreatureCmd.Stun(target);
                 break;
         }
     }

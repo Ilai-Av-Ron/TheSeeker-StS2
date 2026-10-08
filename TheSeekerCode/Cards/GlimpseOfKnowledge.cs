@@ -10,6 +10,7 @@ using MegaCrit.Sts2.Core.Nodes.CommonUi;
 using MegaCrit.Sts2.Core.ValueProps;
 using TheSeeker.TheSeekerCode.Cards;
 using TheSeeker.TheSeekerCode.Powers;
+using TheSeeker.TheSeekerCode.Utils;
 
 namespace TheSeeker.TheSeekerCode.Cards;
 
@@ -31,8 +32,6 @@ public class GlimpseOfKnowledge() : TheSeekerCard(1, CardType.Skill, CardRarity.
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
-        ArgumentNullException.ThrowIfNull(cardPlay.Target);
-
         var choices = new List<CardModel>
         {
             Owner.Creature.CombatState.CreateCard(ModelDb.Card<GlimpseOfKnowledgeDisintegrationChoice>(), Owner),
@@ -42,12 +41,15 @@ public class GlimpseOfKnowledge() : TheSeekerCard(1, CardType.Skill, CardRarity.
         if (IsUpgraded) CardCmd.Upgrade(choices, CardPreviewStyle.None);
         var chosenCard = await CardSelectCmd.FromChooseACardScreen(choiceContext,choices, Owner);
 
+        var target = await Owner.ChooseEnemy();
+        if (target is null) return;
+        
         switch (chosenCard)
         {
             case GlimpseOfKnowledgeDisintegrationChoice:
                 await TheSeekerDisintegrationPower.Apply(
                     choiceContext,
-                    cardPlay.Target,
+                    target,
                     DynamicVars.Power<TheSeekerDisintegrationPower>().IntValue,
                     Owner.Creature,
                     this
@@ -55,7 +57,14 @@ public class GlimpseOfKnowledge() : TheSeekerCard(1, CardType.Skill, CardRarity.
                 break;
 
             case GlimpseOfKnowledgeDamageChoice:
-                await CommonActions.CardAttack(this, cardPlay).Execute(choiceContext);
+                await CreatureCmd.Damage(
+                    choiceContext,
+                    target,
+                    DynamicVars.Damage.IntValue,
+                    DynamicVars.Damage.Props,
+                    Owner.Creature,
+                    this
+                );
                 break;
         }
     }
