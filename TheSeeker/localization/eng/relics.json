@@ -9,5 +9,9 @@
 
   "THESEEKER-ECONOMIC_SACRIFICE.title": "Economic Sacrifice",
   "THESEEKER-ECONOMIC_SACRIFICE.description": "Whenever you heal, gain the same amount of gold.",
-  "THESEEKER-ECONOMIC_SACRIFICE.flavor": "Some call it blood money, he just calls it a smart investment."
+  "THESEEKER-ECONOMIC_SACRIFICE.flavor": "Some call it blood money, he just calls it a smart investment.",
+
+  "THESEEKER-REVITALIZE.title": "Revitalize",
+  "THESEEKER-REVITALIZE.description": "Every other turn, gain energy the first time you trigger harmony.",
+  "THESEEKER-REVITALIZE.flavor": "Going for balance will sometimes grant you exactly what you were missing."
 }

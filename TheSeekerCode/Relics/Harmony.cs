@@ -12,6 +12,16 @@ public class Harmony() : TheSeekerRelic
     private CardType? _previousCardType;
 
     private readonly Dictionary<CardPlay, HarmonyTrigger> _pendingTriggers = new();
+    
+    public interface IHarmonyHook
+    {
+        Task AfterHarmonyTriggered(
+            PlayerChoiceContext choiceContext,
+            Player player)
+        {
+            return Task.CompletedTask;
+        }
+    }
 
     private enum HarmonyTrigger
     {
@@ -57,6 +67,14 @@ public class Harmony() : TheSeekerRelic
         Flash();
 
         await ApplyHarmonyTrigger(choiceContext, trigger);
+        
+        foreach (var hook in Owner.Creature.CombatState.IterateHookListeners().OfType<IHarmonyHook>())
+        {
+            await hook.AfterHarmonyTriggered(
+                choiceContext,
+                Owner
+            );
+        }
     }
 
     public override Task AfterPlayerTurnStart(
