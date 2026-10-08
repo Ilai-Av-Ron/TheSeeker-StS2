@@ -51,8 +51,6 @@
   "THESEEKER-METHODICAL_LEARNER.description": "Deal {Damage:diff()} to an enemy. This card gains 3 block this combat.",
 
   "THESEEKER-PRAXIS.title": "Praxis",
-  "THESEEKER-PRAXIS.description": "Deal {Damage:diff()} to an enemy. At the end of combat, increase this card's damage by 1 if it was played this combat, reduce it by 1 otherwise.",
+  "THESEEKER-PRAXIS.description": "Deal {Damage:diff()} to an enemy. At the end of combat, increase this card's damage by 1 if it was played this combat, reduce it by 1 otherwise."
   
-
-
 }
