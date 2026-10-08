@@ -5,7 +5,7 @@ using TheSeeker.TheSeekerCode.Powers;
 
 namespace TheSeeker.TheSeekerCode.Powers;
 
-public class SlowBurnPower() : TheSeekerPower
+public class SlowBurnPower() : TheSeekerPower, IDisintegrationHook
 {
     public override PowerType Type => PowerType.Buff;
     public override PowerStackType StackType => PowerStackType.Single;
