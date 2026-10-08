@@ -20,6 +20,7 @@ public class Stain() : TheSeekerCard(1, CardType.Attack, CardRarity.Common, Targ
     {
         ArgumentNullException.ThrowIfNull(cardPlay.Target);
         await CommonActions.CardAttack(this, cardPlay).Execute(choiceContext);
+        if (!cardPlay.Target.IsAlive) return;
         await TheSeekerDisintegrationPower.Apply(
             choiceContext,
             cardPlay.Target,
