@@ -69,5 +69,14 @@
   "THESEEKER-BURDEN_OF_KNOWLEDGE_DISINTEGRATION_CHOICE.description": "Apply {TheSeekerDisintegrationPower:diff()} disintegration to all enemies.",
 
   "THESEEKER-BURDEN_OF_KNOWLEDGE_STATUS_CHOICE.title": "Sloth",
-  "THESEEKER-BURDEN_OF_KNOWLEDGE_STATUS_CHOICE.description": "Apply {WeakPower:diff()} and {VulnerablePower:diff()} damage to an enemy."
+  "THESEEKER-BURDEN_OF_KNOWLEDGE_STATUS_CHOICE.description": "Apply {WeakPower:diff()} weak and {VulnerablePower:diff()} vulnerable.",
+
+  "THESEEKER-CURSE_OF_KNOWLEDGE.title": "Curse of Knowledge",
+  "THESEEKER-CURSE_OF_KNOWLEDGE.description": "Choose between Disintegration and Waste Away.",
+
+  "THESEEKER-CURSE_OF_KNOWLEDGE_DISINTEGRATION_CHOICE.title": "Disintegration",
+  "THESEEKER-CURSE_OF_KNOWLEDGE_DISINTEGRATION_CHOICE.description": "Apply {TheSeekerDisintegrationPower:diff()} disintegration to an enemy.",
+
+  "THESEEKER-CURSE_OF_KNOWLEDGE_STUN_CHOICE.title": "Waste Away",
+  "THESEEKER-CURSE_OF_KNOWLEDGE_STUN_CHOICE.description": "Deal {Damage:diff} damage and stun an enemy."
 }

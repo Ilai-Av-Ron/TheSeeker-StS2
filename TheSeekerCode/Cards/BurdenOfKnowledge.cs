@@ -66,14 +66,14 @@ public class BurdenOfKnowledge() : TheSeekerCard(1, CardType.Skill, CardRarity.U
                 
                 await PowerCmd.Apply<WeakPower>(
                     choiceContext,
-                    cardPlay.Target,
+                    target,
                     DynamicVars.Power<WeakPower>().IntValue,
                     Owner.Creature,
                     this
                 );
                 await PowerCmd.Apply<VulnerablePower>(
                     choiceContext,
-                    cardPlay.Target,
+                    target,
                     DynamicVars.Power<VulnerablePower>().IntValue,
                     Owner.Creature,
                     this
