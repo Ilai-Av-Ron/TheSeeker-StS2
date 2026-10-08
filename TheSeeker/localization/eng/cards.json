@@ -51,6 +51,14 @@
   "THESEEKER-METHODICAL_LEARNER.description": "Deal {Damage:diff()} to an enemy. This card gains 3 block this combat.",
 
   "THESEEKER-PRAXIS.title": "Praxis",
-  "THESEEKER-PRAXIS.description": "Deal {Damage:diff()} to an enemy. At the end of combat, increase this card's damage by 1 if it was played this combat, reduce it by 1 otherwise."
-  
+  "THESEEKER-PRAXIS.description": "Deal {Damage:diff()} to an enemy. At the end of combat, increase this card's damage by 1 if it was played this combat, reduce it by 1 otherwise.",
+
+  "THESEEKER-GLIMPSE_OF_KNOWLEDGE.title": "Glimpse of Knowledge",
+  "THESEEKER-GLIMPSE_OF_KNOWLEDGE.description": "Choose between Disintegration and Mind Rot.",
+
+  "THESEEKER-GLIMPSE_OF_KNOWLEDGE_DISINTEGRATION_CHOICE.title": "Disintegration",
+  "THESEEKER-GLIMPSE_OF_KNOWLEDGE_DISINTEGRATION_CHOICE.description": "Apply {TheSeekerDisintegrationPower:diff()} Disintegration to an enemy.",
+
+  "THESEEKER-GLIMPSE_OF_KNOWLEDGE_DAMAGE_CHOICE.title": "Mind Rot",
+  "THESEEKER-GLIMPSE_OF_KNOWLEDGE_DAMAGE_CHOICE.description": "Deal {Damage:diff} damage to an enemy."
 }
