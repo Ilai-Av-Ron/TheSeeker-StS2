@@ -48,6 +48,11 @@
   "THESEEKER-PAY_THE_PRICE.description": "Gain {Block:diff()} block. At the start of next turn, sacrifice {HpLoss:diff()}.",
 
   "THESEEKER-METHODICAL_LEARNER.title": "Methodical Learner",
-  "THESEEKER-METHODICAL_LEARNER.description": "Deal {Damage:diff()} to an enemy. This card gains 3 block this combat."
+  "THESEEKER-METHODICAL_LEARNER.description": "Deal {Damage:diff()} to an enemy. This card gains 3 block this combat.",
+
+  "THESEEKER-PRAXIS.title": "Praxis",
+  "THESEEKER-PRAXIS.description": "Deal {Damage:diff()} to an enemy. At the end of combat, increase this card's damage by 1 if it was played this combat, reduce it by 1 otherwise.",
   
-  }
+
+
+}
