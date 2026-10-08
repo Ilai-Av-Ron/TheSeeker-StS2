@@ -17,5 +17,9 @@
 
   "THESEEKER-MALEVOLENT_MANTRA.title": "Malevolent Mantra",
   "THESEEKER-MALEVOLENT_MANTRA.description": "At the start of your turn, apply 1 disintegrate to all enemies.",
-  "THESEEKER-MALEVOLENT_MANTRA.flavor": "Imagine if he had a shrine..."
+  "THESEEKER-MALEVOLENT_MANTRA.flavor": "Imagine if he had a shrine...",
+
+  "THESEEKER-BLOOD_EPIPHANY.title": "Blood Epiphany",
+  "THESEEKER-BLOOD_EPIPHANY.description": "The first time you sacrifice each combat, heal 3 HP.",
+  "THESEEKER-BLOOD_EPIPHANY.flavor": "Like a perpetual motion machine."
 }

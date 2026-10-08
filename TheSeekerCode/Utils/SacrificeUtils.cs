@@ -50,7 +50,7 @@ public class SacrificeUtils
         
         foreach (var hook in creature.CombatState.IterateHookListeners().OfType<ISacrificeHook>())
         {
-            await hook.AfterSacrifice(choiceContext,creature, hpLost);
+            await hook.AfterSacrifice(choiceContext, creature, hpLost);
         }
     }
 }
