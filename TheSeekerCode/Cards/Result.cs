@@ -26,7 +26,7 @@ public class Result() : TheSeekerCard(9, CardType.Attack, CardRarity.Rare, Targe
     {
         if (amount <= 0) return;
         if (power.Owner != Owner.Creature)return;
-        if (power is not DexterityPower && power is not HarmonyDexterityPower) return;
+        if (power is not DexterityPower) return;
         
         EnergyCost.AddThisCombat((int) -1);
     }
