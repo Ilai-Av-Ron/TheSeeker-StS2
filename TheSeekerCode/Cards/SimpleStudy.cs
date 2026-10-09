@@ -16,7 +16,7 @@ public class SimpleStudy() : TheSeekerCard(0, CardType.Attack, CardRarity.Uncomm
     private int _damageAddedThisTurn;
     
     protected override IEnumerable<DynamicVar> CanonicalVars => [
-        new DamageVar(6, ValueProp.Move),
+        new DamageVar(5, ValueProp.Move),
         new DynamicVar(DamageGainKey, 1)
     ];
     
