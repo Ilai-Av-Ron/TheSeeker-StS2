@@ -17,8 +17,7 @@ public class Revitalize() : TheSeekerRelic, Harmony.IHarmonyHook
         if (player != Owner) return;
         
         Flash();
-        await PlayerCmd.GainEnergy(1m, Owner
-        );
+        await PlayerCmd.GainEnergy(1m, Owner);
         _cooldown = 2;
     }
     
