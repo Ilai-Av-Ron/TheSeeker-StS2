@@ -81,5 +81,8 @@
   "THESEEKER-CURSE_OF_KNOWLEDGE_STUN_CHOICE.description": "Deal {Damage:diff()} damage and stun an enemy.",
 
   "THESEEKER-RESULT.title": "Result",
-  "THESEEKER-RESULT.description": "Deal {Damage:diff()} damage to an enemy. Whenever you gain dexterity, reduce this card's cost by 1 this combat."
+  "THESEEKER-RESULT.description": "Deal {Damage:diff()} damage to an enemy. Whenever you gain dexterity, reduce this card's cost by 1 this combat.",
+
+  "THESEEKER-CONVERGE.title": "Converge",
+  "THESEEKER-CONVERGE.description": "Deal {Damage:diff()} damage to an enemy. Whenever an enemy takes disintegration damage, reduce this card's cost by 1 this combat."
 }
