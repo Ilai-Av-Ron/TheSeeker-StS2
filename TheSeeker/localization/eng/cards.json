@@ -93,5 +93,8 @@
   "THESEEKER-COMMITMENT.description": "Sacrifice {HpLoss:diff()}. Deal {Damage:diff()} damage to an enemy.",
 
   "THESEEKER-REPETITION.title": "Repetition",
-  "THESEEKER-REPETITION.description": "Deal {Damage:diff()} damage to an enemy {Repeat:diff()} times."
+  "THESEEKER-REPETITION.description": "Deal {Damage:diff()} damage to an enemy {Repeat:diff()} times.",
+
+  "THESEEKER-INFECT.title": "Infect",
+  "THESEEKER-INFECT.description": "Select an enemy, if it has disintegration, apply {TheSeekerDisintegrationPower:diff()} disintegration to all enemies."
 }

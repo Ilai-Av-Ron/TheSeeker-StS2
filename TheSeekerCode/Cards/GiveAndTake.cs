@@ -24,9 +24,7 @@ public class GiveAndTake() : TheSeekerCard(0, CardType.Skill, CardRarity.Rare, T
             await TheSeekerDisintegrationPower.Apply(
                 choiceContext,
                 enemy,
-                DynamicVars
-                    .Power<TheSeekerDisintegrationPower>()
-                    .IntValue,
+                DynamicVars.Power<TheSeekerDisintegrationPower>().IntValue,
                 Owner.Creature,
                 this
             );
