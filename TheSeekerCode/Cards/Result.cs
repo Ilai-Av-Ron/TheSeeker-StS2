@@ -22,13 +22,14 @@ public class Result() : TheSeekerCard(9, CardType.Attack, CardRarity.Rare, Targe
 
     protected override void OnUpgrade() => DynamicVars.Damage.UpgradeValueBy(7);
 
-    public async override Task AfterPowerAmountChanged(PlayerChoiceContext choiceContext, PowerModel power, Decimal amount, Creature? applier, CardModel? cardSource)
+    public override Task AfterPowerAmountChanged(PlayerChoiceContext choiceContext, PowerModel power, Decimal amount, Creature? applier, CardModel? cardSource)
     {
-        if (amount <= 0) return;
-        if (power.Owner != Owner.Creature)return;
-        if (power is not DexterityPower) return;
+        if (amount <= 0) return Task.CompletedTask;
+        if (power.Owner != Owner.Creature) return Task.CompletedTask;
+        if (power is not DexterityPower) return Task.CompletedTask;
         
         EnergyCost.AddThisCombat((int) -1);
+        return Task.CompletedTask;
     }
     
 }
