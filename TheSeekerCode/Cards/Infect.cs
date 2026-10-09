@@ -15,9 +15,8 @@ public class Infect() : TheSeekerCard(1, CardType.Skill, CardRarity.Uncommon, Ta
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay play)
     {
-        var target = await Owner.ChooseEnemy();
-        if (target is null) return;
-        if (!target.HasPower<TheSeekerDisintegrationPower>()) return;
+        ArgumentNullException.ThrowIfNull(play.Target);
+        if (!play.Target.HasPower<TheSeekerDisintegrationPower>()) return;
         
         foreach (var enemy in Owner.Creature.CombatState.HittableEnemies)
         {
