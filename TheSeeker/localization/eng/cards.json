@@ -90,5 +90,8 @@
   "THESEEKER-SIMPLE_STUDY.description": "Deal {Damage:diff()} damage to an enemy. Whenever you play a skill, increase damage by {DamageGain:diff()} this turn.",
 
   "THESEEKER-COMMITMENT.title": "Commitment",
-  "THESEEKER-COMMITMENT.description": "Sacrifice {HpLoss:diff()}. Deal {Damage:diff()} damage to an enemy."
+  "THESEEKER-COMMITMENT.description": "Sacrifice {HpLoss:diff()}. Deal {Damage:diff()} damage to an enemy.",
+
+  "THESEEKER-REPETITION.title": "Repetition",
+  "THESEEKER-REPETITION.description": "Deal {Damage:diff()} damage to an enemy {Repeat:diff()} times."
 }

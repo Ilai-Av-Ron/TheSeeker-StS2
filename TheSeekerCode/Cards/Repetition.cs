@@ -1,0 +1,24 @@
+﻿using BaseLib.Utils;
+using MegaCrit.Sts2.Core.Entities.Cards;
+using MegaCrit.Sts2.Core.GameActions.Multiplayer;
+using MegaCrit.Sts2.Core.Localization.DynamicVars;
+using MegaCrit.Sts2.Core.ValueProps;
+using TheSeeker.TheSeekerCode.Cards;
+
+namespace TheSeeker.TheSeekerCode.Cards;
+
+public class Repetition() : TheSeekerCard(1, CardType.Attack, CardRarity.Common, TargetType.AnyEnemy)
+{
+    protected override IEnumerable<DynamicVar> CanonicalVars => 
+        [
+            new DamageVar(1, ValueProp.Move),
+            new RepeatVar(4)
+        ];
+
+    protected override async Task OnPlay(PlayerChoiceContext choiceContext,CardPlay play)
+    {
+        await CommonActions.CardAttack(this, play, hitCount: DynamicVars.Repeat.IntValue).Execute(choiceContext);
+    }
+
+    protected override void OnUpgrade() => DynamicVars.Repeat.UpgradeValueBy(1);
+}
