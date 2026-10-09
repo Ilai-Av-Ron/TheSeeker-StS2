@@ -15,12 +15,12 @@ public interface ISacrificeHook
 
 public class SacrificeUtils
 {
-    public static Task Sacrifice(PlayerChoiceContext choiceContext, CardModel source,int amount)
+    public static Task Sacrifice(PlayerChoiceContext choiceContext, CardModel source, int amount)
     {
         return Sacrifice(choiceContext, source.Owner.Creature, amount, source);
     }
 
-    public static async Task Sacrifice( PlayerChoiceContext choiceContext, Creature creature, int amount, CardModel? source = null)
+    public static async Task Sacrifice(PlayerChoiceContext choiceContext, Creature creature, int amount, CardModel? source = null)
     {
         if (amount <= 0)
             return;
