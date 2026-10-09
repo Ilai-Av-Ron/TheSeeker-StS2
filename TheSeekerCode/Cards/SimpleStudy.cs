@@ -33,7 +33,7 @@ public class SimpleStudy() : TheSeekerCard(0, CardType.Attack, CardRarity.Uncomm
         
         var amount = DynamicVars[DamageGainKey].IntValue;
         _damageAddedThisTurn += amount;
-        DynamicVars.Damage.UpgradeValueBy(amount);
+        DynamicVars.Damage.BaseValue += amount;
         return Task.CompletedTask;
     }
     
